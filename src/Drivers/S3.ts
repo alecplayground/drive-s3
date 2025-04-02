@@ -336,7 +336,7 @@ export class S3Driver implements S3DriverContract {
       this.cachedBucketUrl = await this.getBucketUrl()
     }
 
-    return `${this.cachedBucketUrl}${location}`
+    return `${this.cachedBucketUrl}/${location}`
   }
 
   /**
